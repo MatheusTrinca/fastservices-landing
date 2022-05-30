@@ -1,24 +1,37 @@
 import React from 'react';
 import styles from '../styles/Header.module.css';
+import Image from 'next/image';
 import HeaderCircle from './HeaderCircle';
 
 const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        {/* Circle */}
         <HeaderCircle />
         <div className={styles.rectangles}>
-          <div className={styles.rectangle}>1</div>
-          <div className={styles.rectangle}>2</div>
-          <div className={styles.rectangle}>3</div>
-          <div className={styles.rectangle}>4</div>
-          <div className={styles.rectangle}>5</div>
-          <div className={styles.rectangle}>6</div>
-          <div className={styles.rectangle}>7</div>
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
         </div>
       </div>
-      <div className={styles.headerFooter}>Header Footer</div>
+      <div className={styles.headerFooter}>
+        <div className={styles.arrowDown}>
+          <div className={styles.iconContainer}>
+            <Image
+              src="/img/arrowDown.png"
+              alt="mostrar lojas"
+              width="20px"
+              height="25px"
+              layout="fixed"
+              objectFit="contain"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

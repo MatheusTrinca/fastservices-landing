@@ -4,16 +4,12 @@
   background-color: #1e3c72;
 }
 
+/* Header Main */
+
 .header {
   height: 80vh;
   position: relative;
   overflow: hidden;
-}
-
-.headerFooter {
-  background-color: #fff;
-  height: 20vh;
-  bottom: 0;
 }
 
 .rectangles {
@@ -40,4 +36,36 @@
 .rectangle:last-of-type {
   border-left: solid 1px white;
   opacity: 0.5;
+}
+
+/* Header Footer */
+.headerFooter {
+  width: 100%;
+  background-color: #fff;
+  height: 20vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrowDown {
+  margin-top: 25px;
+  background-image: url('../public/img/buttonLines.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  right: -20px;
+  cursor: pointer;
+}
+
+.iconContainer {
+  width: 62px;
+  height: 62px;
+  background-color: #1e3c72;
+  margin-top: 25px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
