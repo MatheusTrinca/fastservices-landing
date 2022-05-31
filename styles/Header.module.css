@@ -4,7 +4,7 @@
   background-color: #1e3c72;
 }
 
-/* Header Main */
+/**** Header Main ****/
 
 .header {
   height: 80vh;
@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 
+/* Background Items */
 .rectangles {
   display: flex;
   flex: 1;
@@ -24,25 +25,109 @@
 .rectangle {
   width: 200px;
   height: 100%;
-  border-right: solid 1px white;
-  opacity: 0.1;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .rectangle:first-of-type {
-  border-right: solid 1px white;
-  opacity: 0.5;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .rectangle:last-of-type {
-  border-left: solid 1px white;
-  opacity: 0.5;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Header Footer */
+/* Navbar */
+
+.navbar ul li {
+  list-style-type: none;
+  margin: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  max-width: 75%;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 50px;
+  top: 30px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: #fff;
+  z-index: 999;
+}
+
+.title {
+  width: 100%;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+  letter-spacing: 0.2;
+  font-weight: bold;
+}
+
+/* Banner Text */
+.bannerText {
+  text-align: center;
+  position: absolute;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 90px;
+}
+
+.bannerText h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 75px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.bannerDescription {
+  text-align: center;
+  max-width: 800px;
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 300px;
+}
+
+/* Hero Image */
+.heroImage {
+  position: absolute;
+  width: 900px;
+  height: 800px;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+/**** Header Footer ****/
 .headerFooter {
   width: 100%;
   background-color: #fff;
-  height: 20vh;
+  height: 40vh;
   position: relative;
   overflow: hidden;
 }

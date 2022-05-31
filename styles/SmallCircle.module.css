@@ -1,0 +1,11 @@
+.smallCircle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  position: absolute;
+  opacity: 1;
+  right: 0;
+  transform: translateX(50%);
+}
