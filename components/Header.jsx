@@ -46,6 +46,16 @@ const Header = () => {
           Conectando quem precisa com quem sabe fazer. Fale o que precisa,
           receba até 4 orçamentos, escolha o melhor.
         </p>
+        <div className={styles.mediaSocialIcons}>
+          <Image
+            src="/img/facebookIcon.png"
+            alt="facebook"
+            width="17px"
+            height="17px"
+            objectFit="contain"
+            layout="fill"
+          />
+        </div>
 
         {/* Rectangles and Small Circles */}
         <div className={styles.rectangles}>

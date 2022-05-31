@@ -123,6 +123,15 @@
   z-index: 999;
 }
 
+/* Media Social Icons */
+.mediaSocialIcons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  z-index: 999;
+}
+
 /**** Header Footer ****/
 .headerFooter {
   width: 100%;
