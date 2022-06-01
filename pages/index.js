@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
+import About from '../components/About';
 import Header from '../components/Header';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Header />
+      <About />
     </div>
   );
 }

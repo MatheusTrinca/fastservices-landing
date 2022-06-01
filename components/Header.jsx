@@ -47,14 +47,56 @@ const Header = () => {
           receba até 4 orçamentos, escolha o melhor.
         </p>
         <div className={styles.mediaSocialIcons}>
-          <Image
-            src="/img/facebookIcon.png"
-            alt="facebook"
-            width="17px"
-            height="17px"
-            objectFit="contain"
-            layout="fill"
-          />
+          <ul>
+            <li className={styles.socialIcon}>
+              <Link href="https://www.facebook.com">
+                <Image
+                  src="/img/facebookIcon.png"
+                  alt="facebook"
+                  width="17px"
+                  height="17px"
+                  layout="fixed"
+                  objectFit="contain"
+                />
+              </Link>
+            </li>
+            <li className={styles.socialIcon}>
+              <Link href="https://www.instagram.com">
+                <Image
+                  src="/img/instagramIcon.png"
+                  alt="instagram"
+                  width="17px"
+                  height="17px"
+                  layout="fixed"
+                  objectFit="contain"
+                />
+              </Link>
+            </li>
+            <li className={styles.socialIcon}>
+              <Link href="https://www.whatsapp.com">
+                <Image
+                  src="/img/whatsappIcon.png"
+                  alt="whatsapp"
+                  width="17px"
+                  height="17px"
+                  layout="fixed"
+                  objectFit="contain"
+                />
+              </Link>
+            </li>
+            <li className={styles.socialIcon}>
+              <Link href="https://www.linkedin.com">
+                <Image
+                  src="/img/linkedinIcon.png"
+                  alt="linkedin"
+                  width="17px"
+                  height="17px"
+                  layout="fixed"
+                  objectFit="contain"
+                />
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Rectangles and Small Circles */}
@@ -80,17 +122,49 @@ const Header = () => {
           <div className={styles.rectangle} />
         </div>
       </div>
+
+      {/* Header Footer */}
       <div className={styles.headerFooter}>
-        <div className={styles.arrowDown}>
-          <div className={styles.iconContainer}>
-            <Image
-              src="/img/arrowDown.png"
-              alt="mostrar lojas"
-              width="20px"
-              height="25px"
-              layout="fixed"
-              objectFit="contain"
-            />
+        <div className={styles.footerRow}>
+          <div className={styles.arrowDown}>
+            <div className={styles.iconContainer}>
+              <Image
+                src="/img/arrowDown.png"
+                alt="mostrar lojas"
+                width="20px"
+                height="25px"
+                layout="fixed"
+                objectFit="contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={styles.footerRow}>
+          <div className={styles.downloadButtons}>
+            <div className={styles.downloadButton}>
+              <Link href="https://www.google.com">
+                <Image
+                  src="/img/googleDownloadButton.png"
+                  alt="google playstore button"
+                  width="300px"
+                  height="220px"
+                  objectFit="contain"
+                  layout="intrinsic"
+                />
+              </Link>
+            </div>
+            <div className={styles.downloadButton}>
+              <Link href="https://www.apple.com">
+                <Image
+                  src="/img/appleDownloadButton.png"
+                  alt="apple store button"
+                  width="300px"
+                  height="220px"
+                  objectFit="contain"
+                  layout="intrinsic"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
