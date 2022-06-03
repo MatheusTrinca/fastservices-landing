@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: 900px;
   background-color: #1e3c72;
   position: relative;
 }
@@ -9,7 +8,7 @@
 
 .header {
   position: absolute;
-  height: 750px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -125,9 +124,9 @@
   position: absolute;
   width: 80%;
   height: 80%;
-  top: 27vw;
+  top: 60%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 999;
 }
 
