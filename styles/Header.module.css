@@ -123,9 +123,10 @@
 .heroImage {
   position: absolute;
   max-width: 1300px;
-  width: 80%;
-  height: 80%;
-  top: 55%;
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(255, 0, 0, 0.26);
+  top: 650px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
@@ -135,7 +136,7 @@
 .mediaSocialIcons {
   position: absolute;
   bottom: 20px;
-  left: 8%;
+  left: 4%;
   z-index: 999;
   height: 200px;
   display: flex;
@@ -203,7 +204,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 50px;
   z-index: 999;
 }
 
@@ -220,18 +221,18 @@
   .downloadButtons {
     margin-top: 220px;
   }
-  /* .heroImage {
-    width: 70vw;
-    top: 30vw;
-  } */
+  .heroImage {
+    width: 800px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  .downloadButtons {
-    margin-top: 150px;
-  }
   .heroImage {
-    top: 32vw;
+    width: 600px;
+    top: 600px;
+  }
+  .downloadButtons {
+    margin-top: 100px;
   }
 }
 
@@ -241,10 +242,10 @@
   }
 
   .bannerText {
-    margin-top: 50px;
+    margin-top: 70px;
   }
   .bannerDescription {
-    top: 260px;
+    top: 280px;
   }
   /* .downloadButtons {
     flex-direction: column;
