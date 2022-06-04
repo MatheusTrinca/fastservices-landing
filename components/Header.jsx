@@ -29,7 +29,7 @@ const Header = () => {
               <Link href="/sobre">Sobre</Link>
             </li>
           </ul>
-          <h1 className={styles.title}>fastServices</h1>
+          <h1 className={styles.title}>fastService</h1>
           <ul className={styles.rightItems}>
             <li>
               <Link href="/contato">Contato</Link>
@@ -40,7 +40,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className={styles.bannerText}>
-          <h1>Fast Services</h1>
+          <h1>Fast Service</h1>
         </div>
         <p className={styles.bannerDescription}>
           Conectando quem precisa com quem sabe fazer. Fale o que precisa,
