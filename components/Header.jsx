@@ -80,7 +80,7 @@ const Header = () => {
             <li className={styles.socialIcon}>
               <Link href="https://www.whatsapp.com">
                 <Image
-                  src="/img/whatsappIcon.png"
+                  src="/img/whatsapp-32.ico"
                   alt="whatsapp"
                   width="17px"
                   height="17px"
