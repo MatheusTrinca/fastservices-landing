@@ -2,8 +2,9 @@ import React from 'react';
 import styles from '../styles/Header.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import HeaderCircle from './HeaderCircle';
+import Circle from './Circle';
 import SmallCircle from './SmallCircle';
+import CurvedTraces from './CurvedTraces';
 
 const Header = () => {
   return (
@@ -19,7 +20,11 @@ const Header = () => {
         />
       </div>
       <div className={styles.header}>
-        <HeaderCircle />
+        <Circle
+          position={{ top: '-150px', right: '-150px' }}
+          outerColor="#fff"
+          innerColor="#1e3c72"
+        />
         <nav className={styles.navbar}>
           <ul className={styles.leftItems}>
             <li>
@@ -167,6 +172,12 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <CurvedTraces position={{ bottom: '-900px', right: '80px' }} />
+        <Circle
+          position={{ bottom: '-165px', left: '-165px' }}
+          outerColor="#1e3c72"
+          innerColor="#fff"
+        />
       </div>
     </div>
   );

@@ -161,9 +161,6 @@
   width: 100%;
   background-color: #fff;
   position: relative;
-  background-image: url('../public/img/curveLines.png');
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .footerRow {
@@ -246,10 +243,4 @@
   .bannerDescription {
     top: 280px;
   }
-  /* .downloadButtons {
-    flex-direction: column;
-  }
-  .downloadButton:last-of-type {
-    margin-top: -60px;
-  } */
 }
