@@ -244,3 +244,11 @@
     top: 280px;
   }
 }
+
+@media screen and (min-height: 768px) {
+  .heroImage {
+    top: 800px;
+    width: 1200px;
+    height: 800px;
+  }
+}
