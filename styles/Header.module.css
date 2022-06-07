@@ -176,6 +176,7 @@
   background-size: contain;
   width: 200px;
   height: 150px;
+  z-index: 999;
 }
 
 .iconContainer {
