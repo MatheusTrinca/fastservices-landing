@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from '../styles/About.module.css';
 import AboutItem from './AboutItem';
+import AboutService from './AboutService';
 import Title from './Title';
 
-const About = ({ services }) => {
+const About = ({ services, aboutServices }) => {
   return (
     <div className={styles.container}>
       <Title text="Sobre Nós" />
@@ -16,6 +17,16 @@ const About = ({ services }) => {
           description={service.description}
         />
       ))}
+      <div className={styles.aboutServices}>
+        {aboutServices.map(aboutService => (
+          <AboutService
+            key={aboutService.id}
+            title={aboutService.title}
+            imageSrc={aboutService.image}
+            description={aboutService.description}
+          />
+        ))}
+      </div>
     </div>
   );
 };
