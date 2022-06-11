@@ -11,4 +11,12 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 40px;
+  border-radius: 20px;
+  background-color: rgb(247, 247, 247);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
 }
