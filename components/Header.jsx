@@ -113,7 +113,7 @@ const Header = () => {
           <div className={styles.rectangle}>
             <SmallCircle
               top="360px"
-              innerColor="#3aa043"
+              innerColor="#1E3C72"
               borderColor="#fff"
               width="16px"
               height="16px"
