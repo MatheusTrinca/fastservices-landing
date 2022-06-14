@@ -5,5 +5,13 @@
   background-image: url('/img/curveLines.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 400px;
+    left: 0;
+    background-position: 0 50px;
+  }
 }

@@ -7,7 +7,6 @@
 /**** Header Main ****/
 
 .header {
-  position: absolute;
   height: 100vh;
   position: relative;
   overflow: hidden;
