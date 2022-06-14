@@ -48,3 +48,34 @@ export const aboutServices = [
     description: 'Negocie direto com eles. Fácil como nunca foi antes.',
   },
 ];
+
+export const testimonialCards = [
+  {
+    id: '1',
+    text: 'Nossa empresa, fazemos pesquisas contínuas com nosso público-alvo. Isso inclui entrevistas por telefone de 30 a 45 minutos. Foi difícil conduzir a entrevista, realmente ouvir e fazer boas perguntas de acompanhamento',
+    name: 'Carlos Henrique',
+    service: 'Product designer',
+    image: '/img/worker1.jpg',
+  },
+  {
+    id: '2',
+    text: 'Atendemos novos clientes e, na maioria das vezes, estabelecemos relacionamentos comerciais de longo prazo, tudo através do Guru. A flexibilidade em como os projetos podem ser estruturados com toda a segurança possível',
+    name: 'Tecplus Informática',
+    service: 'Técnico em informática',
+    image: '/img/worker2.jpg',
+  },
+  {
+    id: '3',
+    text: 'É fácil se comunicar com os clientes por meio de seu sistema de mensagens e o recurso garante que todos os fundos sejam protegidos antes de qualquer trabalho ser feito.',
+    name: 'Ricardo Lima',
+    service: 'Encanador',
+    image: '/img/worker3.jpg',
+  },
+  {
+    id: '4',
+    text: 'Na Solar Engenharia, fornecemos soluções de engenharia e outros serviços em várias plataformas freelance. Entre todos eles, o Guru é o melhor e nossa primeira escolha para convidar clientes.',
+    name: 'Solar Engenharia',
+    service: 'Engenheiro',
+    image: '/img/worker4.jpg',
+  },
+];

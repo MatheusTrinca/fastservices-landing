@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import About from '../components/About';
+import { Faq } from '../components/Faq';
 import Header from '../components/Header';
-import { services, aboutServices } from '../data';
+import Testimonials from '../components/Testimonials';
+import { services, aboutServices, testimonialCards } from '../data';
 
 export default function Home() {
   return (
@@ -23,12 +25,14 @@ export default function Home() {
       </Head>
       <Header />
       <About services={services} aboutServices={aboutServices} />
+      <Testimonials testimonials={testimonialCards} />
+      <Faq />
     </div>
   );
 }
 
 export const getStaticProps = async () => {
   return {
-    props: { services, aboutServices },
+    props: { services, aboutServices, testimonialCards },
   };
 };
