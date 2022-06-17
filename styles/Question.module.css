@@ -31,7 +31,7 @@
 }
 
 .line {
-  width: 100%;
+  width: 30px;
   height: 2px;
   background-color: #1e3c72;
   position: absolute;
@@ -63,7 +63,7 @@
 }
 
 .lineIcon {
-  width: 60px;
+  width: 30px;
   height: 60px;
   margin-right: 30px;
   cursor: pointer;
@@ -74,7 +74,7 @@
 }
 
 .minusLine {
-  width: 100%;
+  width: 30px;
   height: 2px;
   background-color: #fd5757;
 }
@@ -88,4 +88,24 @@
   font-size: 18px;
   color: #575757;
   line-height: 22px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 50px auto;
+  }
+  .questionContainer {
+    padding: 15px 30px;
+  }
+  .answerContainer {
+    padding: 15px 30px;
+  }
+
+  .crossIcon {
+    margin-right: 20px;
+  }
+
+  .lineIcon {
+    margin-right: 20px;
+  }
 }

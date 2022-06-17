@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Question.module.css';
 
-const Question = () => {
+const Question = ({ question, answerTitle, answerDescription }) => {
   const [openAnswer, setOpenAnswer] = React.useState(false);
 
   return (
@@ -15,7 +15,7 @@ const Question = () => {
           <span className={styles.line}></span>
           <span className={styles.line}></span>
         </div>
-        <p className={styles.text}>Chamber reached do he nothing be?</p>
+        <p className={styles.text}>{question}</p>
       </div>
       {/* Answer */}
       {openAnswer && (
@@ -24,12 +24,8 @@ const Question = () => {
             <span className={styles.minusLine}></span>
           </div>
           <div className={styles.answer}>
-            <p className={styles.answerTitle}>Stuff sight equal of my woody?</p>
-            <p className={styles.answerDescription}>
-              Our asked sex point her she seems. New plenty she horses parish
-              design you. Stuff sight equal of my woody. Him children bringing
-              goodness suitable she entirely put far daughter.
-            </p>
+            <p className={styles.answerTitle}>{answerTitle}</p>
+            <p className={styles.answerDescription}>{answerDescription}</p>
           </div>
         </div>
       )}

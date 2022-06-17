@@ -79,3 +79,34 @@ export const testimonialCards = [
     image: '/img/worker4.jpg',
   },
 ];
+
+export const questions = [
+  {
+    id: '1',
+    question: 'Câmara alcançada não é nada?',
+    answerTitle: 'Coisas a vista igual ao meu amadeirado?',
+    answerDescription:
+      'Nosso ponto perguntado ela parece. Nova abundância ela cavalos paróquia design você. Coisas a vista igual ao meu amadeirado. Ele filhos trazendo bondade adequada ela colocou inteiramente filha longe.',
+  },
+  {
+    id: '2',
+    question: 'Quantas serão as metas alcançadas?',
+    answerTitle: 'Coisas a vista igual ao meu amadeirado?',
+    answerDescription:
+      'Nosso ponto perguntado ela parece. Nova abundância ela cavalos paróquia design você. Coisas a vista igual ao meu amadeirado. Ele filhos trazendo bondade adequada ela colocou inteiramente filha longe.',
+  },
+  {
+    id: '3',
+    question: 'Quanto aos items mais desejados do mercado?',
+    answerTitle: 'Coisas a vista igual ao meu amadeirado?',
+    answerDescription:
+      'Nosso ponto perguntado ela parece. Nova abundância ela cavalos paróquia design você. Coisas a vista igual ao meu amadeirado. Ele filhos trazendo bondade adequada ela colocou inteiramente filha longe.',
+  },
+  {
+    id: '4',
+    question: 'Qual o tempo do serviço prestado?',
+    answerTitle: 'Coisas a vista igual ao meu amadeirado?',
+    answerDescription:
+      'Nosso ponto perguntado ela parece. Nova abundância ela cavalos paróquia design você. Coisas a vista igual ao meu amadeirado. Ele filhos trazendo bondade adequada ela colocou inteiramente filha longe.',
+  },
+];

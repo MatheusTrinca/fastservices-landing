@@ -4,6 +4,7 @@ import styles from '../styles/Testimonials.module.css';
 import TestimonialCard from './TestimonialCard';
 import Title from './Title';
 import CurvedTraces from './CurvedTraces';
+import Circle from './Circle';
 
 const Testimonials = ({ testimonials }) => {
   return (
@@ -28,6 +29,11 @@ const Testimonials = ({ testimonials }) => {
         />
       </div>
       <CurvedTraces position={{ bottom: '-1200px', right: '20px' }} />
+      <Circle
+        position={{ bottom: '-165px', left: '-165px' }}
+        outerColor="#1e3c72"
+        innerColor="#fff"
+      />
     </div>
   );
 };

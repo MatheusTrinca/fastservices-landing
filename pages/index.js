@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import About from '../components/About';
+import DownloadApp from '../components/DownloadApp';
 import { Faq } from '../components/Faq';
 import Header from '../components/Header';
 import Testimonials from '../components/Testimonials';
-import { services, aboutServices, testimonialCards } from '../data';
+import { services, aboutServices, testimonialCards, questions } from '../data';
 
 export default function Home() {
   return (
@@ -26,13 +27,14 @@ export default function Home() {
       <Header />
       <About services={services} aboutServices={aboutServices} />
       <Testimonials testimonials={testimonialCards} />
-      <Faq />
+      <Faq questions={questions} />
+      <DownloadApp />
     </div>
   );
 }
 
 export const getStaticProps = async () => {
   return {
-    props: { services, aboutServices, testimonialCards },
+    props: { services, aboutServices, testimonialCards, questions },
   };
 };
