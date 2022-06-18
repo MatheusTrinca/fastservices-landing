@@ -1,13 +1,13 @@
 .container {
   width: 100%;
-  background-color: #1e3c72;
+  background-color: #3e3b47;
   position: relative;
 }
 
 /**** Header Main ****/
 
 .header {
-  height: 100vh;
+  height: 70vh;
   position: relative;
   overflow: hidden;
 }

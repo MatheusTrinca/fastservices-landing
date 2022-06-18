@@ -1,7 +1,6 @@
-//++ No logar do Our Clients -> copiar Get Ninjas só as imagens sem os textos
-// Escolha a servico - Encontre o que voce precisa, é rapido e de graca
-// Encontre o profissional - Profissionais avaliados e de confiança
-// Escolha o melhor - Negocie direto com eles. Fácil como nunca foi antes
+// Tela 400px arrumar curved traces quebrando layout, não usar overflow hidden
+// Fonte Squada
+// expandir e juntar o footer com o copyright
 
 export const services = [
   {
