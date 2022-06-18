@@ -32,7 +32,7 @@ const Header = () => {
               <Link href="/sobre">Sobre</Link>
             </li>
           </ul>
-          <h1 className={styles.title}>fastService</h1>
+          {/* <h1 className={styles.title}></h1> */}
           <ul className={styles.rightItems}>
             <li>
               <Link href="/contato">Contato</Link>
