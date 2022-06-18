@@ -1,7 +1,3 @@
-// Tela 400px arrumar curved traces quebrando layout, não usar overflow hidden
-// Fonte Squada
-// expandir e juntar o footer com o copyright
-
 export const services = [
   {
     id: '1',
