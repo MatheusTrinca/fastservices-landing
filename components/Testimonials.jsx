@@ -8,7 +8,7 @@ import Circle from './Circle';
 
 const Testimonials = ({ testimonials }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="testimonials">
       <Title text="Depoimentos" />
       <p className={styles.subtitle}>
         FastService é a nova plataforma de contratação de serviços de Marília.

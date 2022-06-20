@@ -6,7 +6,7 @@ import Title from './Title';
 
 const About = ({ services, aboutServices }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <Title text="Sobre Nós" />
       {services.map(service => (
         <AboutItem

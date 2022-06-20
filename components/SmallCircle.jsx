@@ -9,7 +9,7 @@ const SmallCircle = ({ innerColor, top, borderColor, width, height }) => {
         backgroundColor: innerColor,
         top,
         borderColor,
-        opacity: 1,
+        opacity: 0.8,
         width,
         height,
       }}

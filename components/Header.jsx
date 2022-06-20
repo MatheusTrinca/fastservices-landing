@@ -21,24 +21,21 @@ const Header = () => {
         <Circle
           position={{ top: '-150px', right: '-150px' }}
           outerColor="#fff"
-          innerColor="#1e3c72"
+          innerColor="#3e3b47"
         />
         <nav className={styles.navbar}>
-          <ul className={styles.leftItems}>
+          <ul className={styles.items}>
             <li>
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/sobre">Sobre</Link>
+              <Link href="#about">Sobre</Link>
             </li>
-          </ul>
-          {/* <h1 className={styles.title}></h1> */}
-          <ul className={styles.rightItems}>
             <li>
               <Link href="/contato">Contato</Link>
             </li>
             <li>
-              <Link href="/depoimentos">Depoimentos</Link>
+              <Link href="#testimonials">Depoimentos</Link>
             </li>
           </ul>
         </nav>
@@ -105,7 +102,7 @@ const Header = () => {
         {/* Rectangles and Small Circles */}
         <div className={styles.rectangles}>
           <div className={styles.rectangle}>
-            <SmallCircle top="300px" innerColor="#1E3C72" borderColor="#fff" />
+            <SmallCircle top="300px" innerColor="#FCA311" borderColor="#fff" />
           </div>
           <div className={styles.rectangle} />
           <div className={styles.rectangle} />
@@ -113,14 +110,18 @@ const Header = () => {
           <div className={styles.rectangle}>
             <SmallCircle
               top="360px"
-              innerColor="#1E3C72"
+              innerColor="#FCA311"
               borderColor="#fff"
               width="16px"
               height="16px"
             />
           </div>
           <div className={styles.rectangle}>
-            <SmallCircle top="112px" innerColor="#fff" borderColor="#1E3C72" />
+            <SmallCircle
+              top="112px"
+              innerColor="#FCA311"
+              borderColor="#3e3b47"
+            />
           </div>
           <div className={styles.rectangle} />
         </div>

@@ -39,26 +39,9 @@
 
 /* Navbar */
 
-.navbar ul li {
-  list-style-type: none;
-  margin: 0 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.navbar ul li:hover {
-  color: #ccc;
-  transition: all 0.3s;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-}
-
 .navbar {
   max-width: 75%;
-  left: 49%;
+  left: 50%;
   transform: translateX(-50%);
   height: 50px;
   top: 30px;
@@ -73,15 +56,22 @@
   z-index: 999;
 }
 
-.title {
-  width: 100%;
-  font-size: 34px;
+.items {
+  width: 80%;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: 100px;
-  letter-spacing: 0.2;
-  font-weight: bold;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  color: #fca311;
+  transition: all 0.3s;
 }
 
 /* Banner Text */
@@ -182,7 +172,7 @@
 .iconContainer {
   width: 62px;
   height: 62px;
-  background-color: #1e3c72;
+  background-color: #3e3b47;
   margin-top: 25px;
   margin-left: 40px;
   display: flex;
@@ -192,7 +182,7 @@
 }
 
 .iconContainer:hover {
-  background-color: #25498b;
+  background-color: #525058;
   transition: all 0.3s;
 }
 
@@ -201,7 +191,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 340px;
   z-index: 999;
 }
 
@@ -216,7 +206,7 @@
   }
 
   .downloadButtons {
-    margin-top: 220px;
+    margin-top: 360px;
   }
   .heroImage {
     width: 800px;
@@ -225,11 +215,8 @@
 
 @media screen and (max-width: 900px) {
   .heroImage {
-    width: 600px;
-    top: 600px;
-  }
-  .downloadButtons {
-    margin-top: 100px;
+    width: 700px;
+    top: 620px;
   }
 }
 
@@ -243,6 +230,10 @@
   }
   .bannerDescription {
     top: 280px;
+  }
+  .heroImage {
+    width: 600px;
+    top: 580px;
   }
 }
 
@@ -289,6 +280,7 @@
 
   .downloadButtons {
     flex-direction: column;
+    margin-top: 120px;
   }
   .icon {
     width: 17px;
