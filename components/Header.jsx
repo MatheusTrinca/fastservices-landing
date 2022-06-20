@@ -128,19 +128,21 @@ const Header = () => {
       </div>
 
       {/* Header Footer */}
-      <div className={styles.headerFooter}>
+      <div className={styles.headerFooter} id="headerFooter">
         <div className={styles.footerRow}>
           <div className={styles.arrowDown}>
-            <div className={styles.iconContainer}>
-              <Image
-                src="/img/arrowDown.png"
-                alt="mostrar lojas"
-                width="20px"
-                height="25px"
-                layout="fixed"
-                objectFit="contain"
-              />
-            </div>
+            <Link href="#headerFooter">
+              <div className={styles.iconContainer}>
+                <Image
+                  src="/img/arrowDown.png"
+                  alt="mostrar lojas"
+                  width="20px"
+                  height="25px"
+                  layout="fixed"
+                  objectFit="contain"
+                />
+              </div>
+            </Link>
           </div>
         </div>
         <div className={styles.footerRow}>
