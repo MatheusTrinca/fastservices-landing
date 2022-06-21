@@ -298,3 +298,30 @@
     margin: -50px 0;
   }
 }
+
+@media screen and (max-height: 420px) {
+  .header {
+    height: 100vh;
+  }
+  .heroImage {
+    display: none;
+  }
+  .downloadButtons {
+    margin-top: 100px;
+    margin-bottom: -80px;
+  }
+  .navbar {
+    top: 15px;
+  }
+  .bannerDescription {
+    margin-top: -10px;
+  }
+
+  .mediaSocialIcons {
+    left: 1%;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    height: 250px;
+  }
+}

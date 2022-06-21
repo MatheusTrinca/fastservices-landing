@@ -83,10 +83,11 @@
     margin-bottom: 60px;
   }
   .detailTitle {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 15px;
   }
   .description {
     margin-top: 0;
+    font-size: 18px;
   }
 }
