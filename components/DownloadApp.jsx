@@ -2,16 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/DownloadApp.module.css';
-import Title from './Title';
 
 const DownloadApp = () => {
   return (
     <div className={styles.container}>
       <div className={styles.info}>
-        <h2 className={styles.title}>
-          Download <br />
-          App
-        </h2>
+        <h2 className={styles.title}>Download App</h2>
         <p className={styles.description}>
           Wisdom new and valley answer. Contented it so is discourse recommend.
           Man its upon him call mile. An pasture he himself believe ferrars

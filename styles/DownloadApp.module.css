@@ -4,17 +4,16 @@
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
 }
 
 /* Info */
 .info {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-top: 50px;
 }
 
@@ -35,19 +34,36 @@
 
 .buttons {
   display: flex;
-  justify-items: self-start;
   margin-top: 35px;
   margin-left: 10px;
 }
 
 .button {
   margin-left: -80px;
+  cursor: pointer;
 }
 
 /* Phone Image */
-.phoneImage {
-  width: 50%;
-  height: 100%;
+
+@media screen and (max-width: 768px) {
+  .phoneImage {
+    display: none;
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  .buttons {
+    margin-left: 30px;
+  }
+  .button {
+    margin-left: -50px;
+  }
 }
 
 @media screen and (max-width: 480px) {
