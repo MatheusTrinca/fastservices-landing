@@ -4,6 +4,7 @@ import About from '../components/About';
 import DownloadApp from '../components/DownloadApp';
 import { Faq } from '../components/Faq';
 import Header from '../components/Header';
+import Subscribe from '../components/Subscribe';
 import Testimonials from '../components/Testimonials';
 import { services, aboutServices, testimonialCards, questions } from '../data';
 
@@ -29,6 +30,7 @@ export default function Home() {
       <Testimonials testimonials={testimonialCards} />
       <Faq questions={questions} />
       <DownloadApp />
+      <Subscribe />
     </div>
   );
 }
