@@ -3,6 +3,7 @@ import Head from 'next/head';
 import About from '../components/About';
 import DownloadApp from '../components/DownloadApp';
 import { Faq } from '../components/Faq';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Subscribe from '../components/Subscribe';
 import Testimonials from '../components/Testimonials';
@@ -31,6 +32,7 @@ export default function Home() {
       <Faq questions={questions} />
       <DownloadApp />
       <Subscribe />
+      <Footer />
     </div>
   );
 }
