@@ -8,7 +8,7 @@ import CurvedTraces from './CurvedTraces';
 
 const Header = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="header">
       <div className={styles.heroImage}>
         <Image
           src="/img/heroImage.png"

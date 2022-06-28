@@ -9,12 +9,15 @@ const Footer = () => {
       <div className={styles.background}>
         <div className={styles.container}>
           <div className={styles.logoContainer}>
-            <Image
-              src="/img/logo.png"
-              width="280px"
-              height="140px"
-              alt="Fast Service"
-            />
+            <Link href="#header">
+              <Image
+                src="/img/logo.png"
+                width="280px"
+                height="140px"
+                alt="Fast Service"
+                className={styles.logo}
+              />
+            </Link>
           </div>
           <div className={styles.linksContainer}>
             <h2>Sobre o Fast Service</h2>
@@ -23,7 +26,7 @@ const Footer = () => {
                 <Link href="#">Trabalhe conosco</Link>
               </li>
               <li>
-                <Link href="#">Dúvidas frequentes</Link>
+                <Link href="#faq">Dúvidas frequentes</Link>
               </li>
               <li>
                 <Link href="#">Cidades atendidas</Link>

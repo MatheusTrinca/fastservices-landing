@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Subscribe.module.css';
+import Circle from './Circle';
 
 const Subscribe = () => {
   return (
@@ -18,6 +19,11 @@ const Subscribe = () => {
             <button type="submit">Enviar</button>
           </form>
         </div>
+        <Circle
+          position={{ bottom: '-165px', right: '30px' }}
+          outerColor="#fff"
+          innerColor="#313131"
+        />
       </div>
     </div>
   );
