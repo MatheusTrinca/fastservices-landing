@@ -40,6 +40,7 @@
 
 .inputContainer input {
   padding: 15px 10px;
+  width: 250px;
   color: #575757;
   border: 0;
   outline: none;
@@ -70,6 +71,9 @@
   }
   .background {
     padding: 50px;
+  }
+  .inputContainer input {
+    width: 200px;
   }
 }
 

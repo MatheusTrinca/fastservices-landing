@@ -32,7 +32,7 @@ const Header = () => {
               <Link href="#about">Sobre</Link>
             </li>
             <li>
-              <Link href="/contato">Contato</Link>
+              <Link href="#subscribe">Contato</Link>
             </li>
             <li>
               <Link href="#testimonials">Depoimentos</Link>
@@ -75,7 +75,7 @@ const Header = () => {
             <li className={styles.socialIcon}>
               <Link href="https://www.whatsapp.com">
                 <Image
-                  src="/img/whatsapp-32.ico"
+                  src="/img/whatsapp-32.png"
                   alt="whatsapp"
                   width="17px"
                   height="17px"

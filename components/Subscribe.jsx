@@ -3,7 +3,7 @@ import styles from '../styles/Subscribe.module.css';
 
 const Subscribe = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="subscribe">
       <div className={styles.background}>
         <div className={styles.textContainer}>
           <h2 className={styles.title}>Cadastre-se e fique atualizado</h2>
