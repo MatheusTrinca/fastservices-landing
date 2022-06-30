@@ -75,7 +75,7 @@ const Header = () => {
             <li className={styles.socialIcon}>
               <Link href="https://www.whatsapp.com">
                 <Image
-                  src="/img/whatsapp-32.png"
+                  src="/img/whatsappIcon.png"
                   alt="whatsapp"
                   width="17px"
                   height="17px"
@@ -152,8 +152,8 @@ const Header = () => {
                 <Image
                   src="/img/googleDownloadButton.png"
                   alt="google playstore button"
-                  width="300px"
-                  height="220px"
+                  width="350px"
+                  height="250px"
                   objectFit="contain"
                   layout="intrinsic"
                 />
@@ -164,8 +164,8 @@ const Header = () => {
                 <Image
                   src="/img/appleDownloadButton.png"
                   alt="apple store button"
-                  width="300px"
-                  height="220px"
+                  width="350px"
+                  height="250px"
                   objectFit="contain"
                   layout="intrinsic"
                 />
