@@ -18,16 +18,24 @@
 
 .rectangle {
   width: 100%;
-  height: 350px;
+  height: 50%;
   background-color: #313131;
   border-radius: 10px;
   position: absolute;
-  bottom: 100px;
+  bottom: 20%;
 }
-
-.aboutImage {
-  width: 600px;
-  height: 700px;
+.image {
+  position: absolute;
+  /* top: 12%; */
+  top: 40%;
+  transform: translateY(-34%);
+  right: 18%;
+  max-width: 650px;
+  max-height: 750px;
+  width: 50vw;
+  height: 55vw;
+  min-width: 420px;
+  min-height: 480px;
 }
 
 /* Detail Container */
@@ -54,9 +62,19 @@
   margin-top: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .rectangle {
+    height: 40%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 30px;
+  }
+
+  .image {
+    right: 20%;
   }
 
   .imageContainer {
@@ -65,6 +83,7 @@
     height: 500px;
     margin: 0 auto;
   }
+
   .detailContainer {
     width: 100%;
     text-align: center;
@@ -89,5 +108,23 @@
   .description {
     margin-top: 0;
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .image {
+    right: 18%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image {
+    right: 16%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .image {
+    right: 14%;
   }
 }

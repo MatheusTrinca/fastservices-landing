@@ -10,14 +10,11 @@ const AboutItem = ({ direction, imageSrc, title, description }) => {
     >
       <div className={styles.imageContainer}>
         <div className={styles.rectangle}></div>
-        <Image
-          src={imageSrc}
-          className={styles.aboutImage}
-          alt="phone"
-          layout="fill"
-          objectFit="contain"
-        />
+        <div className={styles.image}>
+          <Image src={imageSrc} alt="phone" layout="fill" />
+        </div>
       </div>
+
       <div className={styles.detailContainer}>
         <h2 className={styles.detailTitle}>{title}</h2>
         <p className={styles.description}>{description}</p>
