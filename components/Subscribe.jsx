@@ -3,6 +3,7 @@ import styles from '../styles/Subscribe.module.css';
 import Circle from './Circle';
 import toast from 'react-hot-toast';
 import { sendContactEmail } from '../services/sendMail';
+import TelefoneBrasileiroInput from 'react-telefone-brasileiro';
 
 const Subscribe = () => {
   const [name, setName] = React.useState('');
@@ -86,12 +87,13 @@ const Subscribe = () => {
             />
           </div>
           <div className={styles.formRow}>
-            <input
+            <TelefoneBrasileiroInput
               className={styles.input}
-              type="text"
-              placeholder="Digite seu telefone..."
+              placeholder="Telefone ou whatsapp..."
               onChange={e => setPhone(e.target.value)}
               value={phone}
+              temDDD
+              separaDDD
             />
             <button className={styles.submitButton} type="submit">
               Enviar
