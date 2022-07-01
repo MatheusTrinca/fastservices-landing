@@ -38,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
+  z-index: 999;
 }
 
 .inputContainer input {
@@ -65,6 +66,11 @@
 .inputContainer button:hover {
   background-color: #5c5769;
   border-color: #5c5769;
+}
+
+.inputContainer button:disabled {
+  background-color: grey;
+  border-color: grey;
 }
 
 @media screen and (max-width: 1200px) {
