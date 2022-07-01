@@ -2,9 +2,9 @@
   width: 100%;
   padding: 0 6%;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 100px auto;
   /* Tirar depois */
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .background {

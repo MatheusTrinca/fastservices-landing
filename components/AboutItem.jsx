@@ -11,7 +11,13 @@ const AboutItem = ({ direction, imageSrc, title, description }) => {
       <div className={styles.imageContainer}>
         <div className={styles.rectangle}></div>
         <div className={styles.image}>
-          <Image src={imageSrc} alt="phone" layout="fill" />
+          <Image
+            src={imageSrc}
+            className={styles.aboutImage}
+            alt="phone"
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
       </div>
 

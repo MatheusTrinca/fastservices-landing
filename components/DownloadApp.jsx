@@ -43,8 +43,8 @@ const DownloadApp = () => {
       <div className={styles.phoneImage}>
         <Image
           src="/img/phoneImage.png"
-          width="1000px"
-          height="1300px"
+          width="400px"
+          height="680px"
           alt="Phone Image"
         />
       </div>
