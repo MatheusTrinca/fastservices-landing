@@ -16,6 +16,7 @@
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
+  gap: 20px;
 }
 
 .textContainer {
@@ -33,63 +34,66 @@
   color: #f5f2ff;
 }
 
-.inputContainer {
+.form {
+  flex: 1;
   align-self: flex-end;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-left: 20px;
   z-index: 999;
+  gap: 14px;
 }
 
-.inputContainer input {
+.formRow {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input {
   padding: 15px 10px;
-  width: 250px;
+  flex: 1;
   color: #575757;
   border: 0;
   outline: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.inputContainer button {
+.submitButton {
   border: 1px solid #fdfdff;
   background-color: transparent;
   border-radius: 5px;
   font-size: 14px;
   padding: 15px 20px;
   color: #fdfdff;
-  margin-left: 10px;
+
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.inputContainer button:hover {
+.submitButton:hover {
   background-color: #5c5769;
   border-color: #5c5769;
 }
 
-.inputContainer button:disabled {
+.submitButton:disabled {
   background-color: grey;
   border-color: grey;
 }
 
 @media screen and (max-width: 1200px) {
-  .inputContainer {
-    align-self: center;
-  }
   .background {
     padding: 50px;
   }
-  .inputContainer input {
-    width: 200px;
+  .form {
+    gap: 10px;
   }
-}
 
-@media screen and (max-width: 900px) {
-  .inputContainer {
+  .submitButton {
     width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
+    margin-top: 8px;
   }
 }
 
@@ -115,18 +119,5 @@
   .text {
     line-height: 28px;
     font-size: 16px;
-  }
-
-  .inputContainer {
-    width: 100%;
-    flex-direction: column;
-  }
-  .inputContainer input {
-    width: 100%;
-  }
-  .inputContainer button {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 10px;
   }
 }

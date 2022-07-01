@@ -5,6 +5,8 @@ import toast from 'react-hot-toast';
 import { sendContactEmail } from '../services/sendMail';
 
 const Subscribe = () => {
+  const [name, setName] = React.useState('');
+  const [phone, setPhone] = React.useState('');
   const [email, setEmail] = React.useState('');
 
   const handlelSubmit = async e => {
@@ -20,13 +22,24 @@ const Subscribe = () => {
       });
       return;
     }
+    if (!name || !phone) {
+      toast('Complete seus dados', {
+        style: {
+          background: 'red',
+          color: '#fff',
+        },
+      });
+      return;
+    }
     try {
       await sendContactEmail(
-        'Prestador',
+        name,
         email,
-        `Temos um possível interessado <br> email: ${email}`
+        `Temos um possível interessado <br> nome: ${name} <br> telefone: ${phone} <br> email: ${email}`
       );
+      setName('');
       setEmail('');
+      setPhone('');
       toast('Email enviado com sucesso. Aguarde nosso contato!', {
         style: {
           background: 'green',
@@ -53,17 +66,39 @@ const Subscribe = () => {
             blanditiis praesentium voluptatum deleniti atque .
           </p>
         </div>
-        <div className={styles.inputContainer}>
-          <form onSubmit={handlelSubmit}>
+
+        {/* Form */}
+        <form onSubmit={handlelSubmit} className={styles.form}>
+          <div className={styles.formRow}>
             <input
+              className={styles.input}
+              type="text"
+              placeholder="Digite seu nome..."
+              onChange={e => setName(e.target.value)}
+              value={name}
+            />
+            <input
+              className={styles.input}
               type="email"
               placeholder="Digite seu email..."
               onChange={e => setEmail(e.target.value)}
               value={email}
             />
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+          </div>
+          <div className={styles.formRow}>
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="Digite seu telefone..."
+              onChange={e => setPhone(e.target.value)}
+              value={phone}
+            />
+            <button className={styles.submitButton} type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+
         <Circle
           position={{ bottom: '-165px', right: '30px' }}
           outerColor="#fff"
