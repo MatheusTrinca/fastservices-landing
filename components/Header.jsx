@@ -3,7 +3,6 @@ import styles from '../styles/Header.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Circle from './Circle';
-import SmallCircle from './SmallCircle';
 import CurvedTraces from './CurvedTraces';
 
 const Header = () => {
@@ -101,28 +100,11 @@ const Header = () => {
 
         {/* Rectangles and Small Circles */}
         <div className={styles.rectangles}>
-          <div className={styles.rectangle}>
-            <SmallCircle top="300px" innerColor="#FCA311" borderColor="#fff" />
-          </div>
           <div className={styles.rectangle} />
           <div className={styles.rectangle} />
           <div className={styles.rectangle} />
-          <div className={styles.rectangle}>
-            <SmallCircle
-              top="360px"
-              innerColor="#FCA311"
-              borderColor="#fff"
-              width="16px"
-              height="16px"
-            />
-          </div>
-          <div className={styles.rectangle}>
-            <SmallCircle
-              top="112px"
-              innerColor="#FCA311"
-              borderColor="#3e3b47"
-            />
-          </div>
+          <div className={styles.rectangle} />
+          <div className={styles.rectangle} />
           <div className={styles.rectangle} />
         </div>
       </div>
