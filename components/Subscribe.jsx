@@ -1,28 +1,45 @@
 import React from 'react';
 import styles from '../styles/Subscribe.module.css';
 import Circle from './Circle';
+import toast from 'react-hot-toast';
+import { sendContactEmail } from '../services/sendMail';
 
 const Subscribe = () => {
   const [email, setEmail] = React.useState('');
-  const [error, setError] = React.useState(false);
 
-  const handleEmailSubmit = e => {
+  const handlelSubmit = async e => {
     e.preventDefault();
     const emailRegex =
       /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
-    // Send Email
-    if (emailRegex.test(email)) {
-      // Enviar email
-    } else {
-      setError(true);
-      setEmail('Digite um email válido');
+    if (!emailRegex.test(email)) {
+      toast('Informe um email válido', {
+        style: {
+          background: 'red',
+          color: '#fff',
+        },
+      });
+      return;
     }
-  };
-
-  const handleOnFocus = () => {
-    if (error) {
-      setError(false);
+    try {
+      await sendContactEmail(
+        'Prestador',
+        email,
+        `Temos um possível interessado <br> email: ${email}`
+      );
       setEmail('');
+      toast('Email enviado com sucesso. Aguarde nosso contato!', {
+        style: {
+          background: 'green',
+          color: '#fff',
+        },
+      });
+    } catch (error) {
+      toast('Ocorreu um erro ao tentar enviar sua mensage. Tente novamente!', {
+        style: {
+          background: 'red',
+          color: '#fff',
+        },
+      });
     }
   };
 
@@ -37,27 +54,14 @@ const Subscribe = () => {
           </p>
         </div>
         <div className={styles.inputContainer}>
-          <form onSubmit={handleEmailSubmit}>
+          <form onSubmit={handlelSubmit}>
             <input
-              style={
-                error
-                  ? {
-                      borderWidth: '1px',
-                      borderColor: 'red',
-                      borderStyle: 'solid',
-                      color: 'red',
-                    }
-                  : {}
-              }
               type="email"
               placeholder="Digite seu email..."
               onChange={e => setEmail(e.target.value)}
               value={email}
-              onFocus={handleOnFocus}
             />
-            <button type="submit" disabled={error}>
-              Enviar
-            </button>
+            <button type="submit">Enviar</button>
           </form>
         </div>
         <Circle
