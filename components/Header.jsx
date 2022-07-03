@@ -5,6 +5,12 @@ import Link from 'next/link';
 import Circle from './Circle';
 import CurvedTraces from './CurvedTraces';
 
+// Squada One (FAST)
+// Mont Bold font (Service)
+// squada one subtitulo
+
+// https://github.com/vercel/next.js/issues/7915
+
 const Header = () => {
   return (
     <div className={styles.container} id="header">
@@ -49,50 +55,58 @@ const Header = () => {
           <ul>
             <li className={styles.socialIcon}>
               <Link href="https://www.facebook.com">
-                <Image
-                  src="/img/facebookIcon.png"
-                  alt="facebook"
-                  width="17px"
-                  height="17px"
-                  layout="fixed"
-                  objectFit="contain"
-                />
+                <a>
+                  <Image
+                    src="/img/facebookIcon.png"
+                    alt="facebook"
+                    width="17px"
+                    height="17px"
+                    layout="fixed"
+                    objectFit="contain"
+                  />
+                </a>
               </Link>
             </li>
             <li className={styles.socialIcon}>
               <Link href="https://www.instagram.com">
-                <Image
-                  src="/img/instagramIcon.png"
-                  alt="instagram"
-                  width="17px"
-                  height="17px"
-                  layout="fixed"
-                  objectFit="contain"
-                />
+                <a>
+                  <Image
+                    src="/img/instagramIcon.png"
+                    alt="instagram"
+                    width="17px"
+                    height="17px"
+                    layout="fixed"
+                    objectFit="contain"
+                  />
+                </a>
               </Link>
             </li>
             <li className={styles.socialIcon}>
               <Link href="https://www.whatsapp.com">
-                <Image
-                  src="/img/whatsappIcon.png"
-                  alt="whatsapp"
-                  width="17px"
-                  height="17px"
-                  layout="fixed"
-                  objectFit="contain"
-                />
+                <a>
+                  <Image
+                    src="/img/whatsappIcon.png"
+                    alt="whatsapp"
+                    width="17px"
+                    height="17px"
+                    layout="fixed"
+                    objectFit="contain"
+                  />
+                </a>
               </Link>
             </li>
             <li className={styles.socialIcon}>
               <Link href="https://www.linkedin.com">
-                <Image
-                  src="/img/linkedinIcon.png"
-                  alt="linkedin"
-                  width="17px"
-                  height="17px"
-                  layout="fixed"
-                  objectFit="contain"
-                />
+                <a>
+                  <Image
+                    src="/img/linkedinIcon.png"
+                    alt="linkedin"
+                    width="17px"
+                    height="17px"
+                    layout="fixed"
+                    objectFit="contain"
+                  />
+                </a>
               </Link>
             </li>
           </ul>
@@ -115,14 +129,16 @@ const Header = () => {
           <div className={styles.arrowDown}>
             <Link href="#headerFooter">
               <div className={styles.iconContainer}>
-                <Image
-                  src="/img/arrowDown.png"
-                  alt="mostrar lojas"
-                  width="20px"
-                  height="25px"
-                  layout="fixed"
-                  objectFit="contain"
-                />
+                <a>
+                  <Image
+                    src="/img/arrowDown.png"
+                    alt="mostrar lojas"
+                    width="20px"
+                    height="25px"
+                    layout="fixed"
+                    objectFit="contain"
+                  />
+                </a>
               </div>
             </Link>
           </div>
@@ -131,26 +147,30 @@ const Header = () => {
           <div className={styles.downloadButtons}>
             <div className={styles.downloadButton}>
               <Link href="https://www.google.com">
-                <Image
-                  src="/img/googleDownloadButton.png"
-                  alt="google playstore button"
-                  width="350px"
-                  height="250px"
-                  objectFit="contain"
-                  layout="intrinsic"
-                />
+                <a>
+                  <Image
+                    src="/img/googleDownloadButton.png"
+                    alt="google playstore button"
+                    width="350px"
+                    height="250px"
+                    objectFit="contain"
+                    layout="intrinsic"
+                  />
+                </a>
               </Link>
             </div>
             <div className={styles.downloadButton}>
               <Link href="https://www.apple.com">
-                <Image
-                  src="/img/appleDownloadButton.png"
-                  alt="apple store button"
-                  width="350px"
-                  height="250px"
-                  objectFit="contain"
-                  layout="intrinsic"
-                />
+                <a>
+                  <Image
+                    src="/img/appleDownloadButton.png"
+                    alt="apple store button"
+                    width="350px"
+                    height="250px"
+                    objectFit="contain"
+                    layout="intrinsic"
+                  />
+                </a>
               </Link>
             </div>
           </div>
@@ -158,7 +178,7 @@ const Header = () => {
         <CurvedTraces position={{ bottom: '-900px', right: '80px' }} />
         <Circle
           position={{ bottom: '-165px', left: '-165px' }}
-          outerColor="#1e3c72"
+          outerColor="#fca311"
           innerColor="#fff"
         />
       </div>

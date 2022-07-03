@@ -33,7 +33,7 @@ const Testimonials = ({ testimonials }) => {
       </div>
       <Circle
         position={{ bottom: '-165px', left: '-165px' }}
-        outerColor="#1e3c72"
+        outerColor="#fca311"
         innerColor="#fff"
       />
     </div>

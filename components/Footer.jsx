@@ -10,13 +10,15 @@ const Footer = () => {
         <div className={styles.container}>
           <div className={styles.logoContainer}>
             <Link href="#header">
-              <Image
-                src="/img/logo.png"
-                width="280px"
-                height="140px"
-                alt="Fast Service"
-                className={styles.logo}
-              />
+              <a>
+                <Image
+                  src="/img/logo.png"
+                  width="280px"
+                  height="140px"
+                  alt="Fast Service"
+                  className={styles.logo}
+                />
+              </a>
             </Link>
           </div>
           <div className={styles.linksContainer}>
@@ -41,22 +43,26 @@ const Footer = () => {
             <div className={styles.downloadButtonContainer}>
               <div className={styles.donwloadButton}>
                 <Link href="https://www.google.com">
-                  <Image
-                    src="/img/googleDownloadButton.png"
-                    alt="Google Play Store"
-                    width="300px"
-                    height="220px"
-                  />
+                  <a>
+                    <Image
+                      src="/img/googleDownloadButton.png"
+                      alt="Google Play Store"
+                      width="300px"
+                      height="220px"
+                    />
+                  </a>
                 </Link>
               </div>
               <div className={styles.downloadButton}>
                 <Link href="https://www.apple.com">
-                  <Image
-                    src="/img/appleDownloadButton.png"
-                    alt="Apple App Store"
-                    width="300px"
-                    height="220px"
-                  />
+                  <a>
+                    <Image
+                      src="/img/appleDownloadButton.png"
+                      alt="Apple App Store"
+                      width="300px"
+                      height="220px"
+                    />
+                  </a>
                 </Link>
               </div>
             </div>

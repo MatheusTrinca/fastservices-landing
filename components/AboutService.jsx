@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/AboutService.module.css';
 
+// oddie whatsapp
+
 const AboutService = ({ imageSrc, title, description }) => {
   return (
     <div className={styles.container}>
